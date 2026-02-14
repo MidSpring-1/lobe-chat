@@ -1,4 +1,12 @@
 {
   "buildCommand": "bun run build:vercel",
-  "installCommand": "npx pnpm@10.26.2 install"
+  "installCommand": "npx pnpm@10.26.2 install",
+  "functions": {
+    "app/webapi/**/*.ts": {
+      "maxDuration": 60
+    },
+    "src/app/webapi/**/*.ts": {
+      "maxDuration": 60
+    }
+  }
 }
